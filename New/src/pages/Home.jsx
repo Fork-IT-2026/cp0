@@ -1,5 +1,6 @@
 import React from 'react';
 import ExperiencePage from '../components/ExperiencePage';
+import FlavorDiscovery from '../components/FlavorDiscovery';
 
 const Home = () => {
     const sections = [
@@ -21,12 +22,15 @@ const Home = () => {
     ];
 
     return (
-        <ExperiencePage
-            title="Crafted to Be Remembered."
-            subtitle="A bowl designed with precision."
-            accent="Experience the Craft."
-            sections={sections}
-        />
+        <>
+            <ExperiencePage
+                title="Crafted to Be Remembered."
+                subtitle="A bowl designed with precision."
+                accent="Experience the Craft."
+                sections={sections}
+            />
+            <FlavorDiscovery />
+        </>
     );
 };
 

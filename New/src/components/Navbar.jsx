@@ -28,6 +28,7 @@ const Navbar = () => {
                     {[
                         { name: 'Home', path: '/' },
                         { name: 'About', path: '/about' },
+                        { name: 'Discover', path: '/recipes' },
                         { name: 'Craft', path: '#craft' },
                         { name: 'Experience', path: '#experience' }
                     ].map((item) => (
