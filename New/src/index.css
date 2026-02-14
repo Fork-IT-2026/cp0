@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Modern Grotesk", "Inter", sans-serif;
+  --font-sans: "Inter", "SF Pro Display", system-ui, sans-serif;
+
+  --color-primary: #050505;
+  --color-secondary: #0A0A0C;
+  --color-accent-red: #B11226;
+  --color-accent-amber: #FF8A00;
+  --color-accent-green: #2ECC71;
+  --color-void: #050505;
+  --color-warm-glow: #0B0705;
+
+  --spacing-luxury-gap: 8rem;
+  --spacing-section-padding: 12rem;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: -0.02em;
+    @apply font-bold;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+  display: block;
+}
+
+.scrolly-container {
+  height: 400vh;
+  position: relative;
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #0B0705 0%, #050505 100%);
+}
